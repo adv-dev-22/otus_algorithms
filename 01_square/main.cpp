@@ -7,7 +7,7 @@ int main(int argc, char * args [])
     for (int x = 0; x < n; ++x) {
         for (int y = 0; y < n; ++y)
         {
-            if (x < y)
+            if (x == y)
                 std::cout << "# ";
             else
                 std::cout << ". ";
