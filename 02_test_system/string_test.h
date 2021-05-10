@@ -11,7 +11,8 @@ public:
     StringTest();
     virtual ~StringTest();
 
-    virtual void execute(int argc, char * argv []);
+private:
+    virtual bool test_passed(std::ifstream & ifs_in, std::ifstream & ifs_out) override;
 };
 
 }

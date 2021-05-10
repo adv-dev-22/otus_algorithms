@@ -1,5 +1,7 @@
 #pragma once
 
+#include <fstream>
+
 namespace algorithms_202104
 {
 
@@ -10,6 +12,9 @@ public:
     virtual ~BasicTest();
 
     virtual void execute(int argc, char * argv []);
+
+private:
+    virtual bool test_passed(std::ifstream & ifs_in, std::ifstream & ifs_out) = 0;
 };
 
 }
