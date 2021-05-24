@@ -22,13 +22,13 @@ set_target_properties(powers_half PROPERTIES
 	CXX_STANDARD_REQUIRED ON
 )
 
-# Tickets
-#add_executable(tickets_test_system main_tickets.cpp tickets_test.cpp)
-#target_link_libraries(tickets_test_system test_system)
-#set_target_properties(tickets_test_system PROPERTIES 
-#	CXX_STANDARD 17
-#	CXX_STANDARD_REQUIRED ON
-#)
+add_executable(powers_decomposition main_power_decomposition.cpp power_decomposition_test.cpp)
+target_link_libraries(powers_decomposition test_system)
+set_target_properties(powers_decomposition PROPERTIES 
+	CXX_STANDARD 17
+	CXX_STANDARD_REQUIRED ON
+)
+
 
 # End of the file
 

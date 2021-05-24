@@ -5,11 +5,11 @@
 namespace algorithms_202104
 {
 
-class PowerTest : public BasicTest
+class PowerDecompositionTest : public BasicTest
 {
 public:
-    PowerTest() = default;
-    virtual ~PowerTest() = default;
+    PowerDecompositionTest() = default;
+    virtual ~PowerDecompositionTest() = default;
 
 private:
     virtual bool test_passed(std::ifstream & ifs_in, std::ifstream & ifs_out);
