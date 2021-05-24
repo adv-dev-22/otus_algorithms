@@ -15,6 +15,13 @@ set_target_properties(powers PROPERTIES
 	CXX_STANDARD_REQUIRED ON
 )
 
+add_executable(powers_half main_power_half.cpp power_half_test.cpp)
+target_link_libraries(powers_half test_system)
+set_target_properties(powers_half PROPERTIES 
+	CXX_STANDARD 17
+	CXX_STANDARD_REQUIRED ON
+)
+
 # Tickets
 #add_executable(tickets_test_system main_tickets.cpp tickets_test.cpp)
 #target_link_libraries(tickets_test_system test_system)
